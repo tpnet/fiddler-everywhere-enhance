@@ -6,6 +6,19 @@ api(dot)getfiddler(dot)com/linux/latest-linux
 ## Windows
 api(dot)getfiddler(dot)com/win/latest
 
+## Mac
+
+example 4.1.2:
+arm64: https://downloads.getfiddler.com/mac-arm64/Fiddler%20Everywhere%204.1.2.dmg
+0. normal install, used trial version and login user. then close.
+1. download https://github.com/tpnet/fiddler-everywhere-enhance/tree/master/v4.0.1-mac files
+2. download https://github.com/tpnet/fiddler-everywhere-enhance/blob/master/v4.1.2/FiddlerBackendSDK.dll replace pre file `FiddlerBackendSDK.dll`
+3. copy `main.js` to /Applications/Fiddler Everywhere.app/Contents/Resources/app/out/main.js
+4. copy `Fiddler.WebUi.dll` to `/Applications/Fiddler Everywhere.app/Contents/Resources/app/out/WebServer/Fiddler.WebUi.dll`
+5. copy `FiddlerBackendSDK.dll` to `/Applications/Fiddler Everywhere.app/Contents/Resources/app/out/WebServer/FiddlerBackendSDK.dll`
+6. rename `main.2e20c4aa11e930e4.js` to `main.e41208441871016f.js`
+7. copy `main.e41208441871016f.js` to  `/Applications/Fiddler Everywhere.app/Contents/Resources/app/out/WebServer/ClientApp/dist/main.e41208441871016f.js`
+
 ## NOTICE
 
 If you are using windows, just try https://github.com/dnSpyEx/dnSpy
